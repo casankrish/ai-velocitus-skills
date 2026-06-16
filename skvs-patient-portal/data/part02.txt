@@ -1,0 +1,318 @@
+er;
+}
+.modal-body { padding: 24px 26px; }
+.form-group { margin-bottom: 16px; }
+.form-label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--forest-darkest);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.form-input, .form-textarea, .form-select {
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--cream-deep);
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--ink);
+}
+.form-textarea { min-height: 100px; resize: vertical; }
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  outline: none;
+  border-color: var(--forest-darkest);
+}
+
+/* Sharing register */
+.share-table { width:100%; border-collapse: collapse; font-size: 13px; }
+.share-table th {
+  background: var(--cream-warm);
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ink-soft);
+  font-weight: 600;
+  border-bottom: 1px solid var(--cream-deep);
+}
+.share-table td {
+  padding: 14px;
+  border-bottom: 1px solid var(--cream-deep);
+  vertical-align: top;
+}
+.share-table tr:hover td { background: var(--cream); }
+.share-type {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Inter', sans-serif;
+}
+.type-df { background: var(--gold-pale); color: var(--forest-darkest); }
+.type-dp { background: #d6dfe8; color: var(--info); }
+.type-cm { background: #e0d6e8; color: #4a2d6b; }
+.type-st { background: #d6e6db; color: var(--ok); }
+
+/* Escalation matrix */
+.escalation-step {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 18px;
+  margin-bottom: 16px;
+  background: #fff;
+  border: 1px solid var(--cream-deep);
+  border-radius: 6px;
+  padding: 20px;
+  position: relative;
+}
+.escalation-step::after {
+  content: "↓";
+  position: absolute;
+  left: 30px;
+  bottom: -22px;
+  color: var(--gold);
+  font-size: 20px;
+  z-index: 2;
+}
+.escalation-step:last-child::after { display: none; }
+.escalation-step-num {
+  width: 44px; height: 44px;
+  background: var(--forest-darkest);
+  color: var(--gold-light);
+  border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.escalation-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--forest-darkest);
+  margin-bottom: 4px;
+}
+.escalation-section {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.escalation-desc {
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin-bottom: 10px;
+}
+.escalation-contact {
+  background: var(--cream-warm);
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--ink);
+}
+.escalation-contact strong { color: var(--forest-darkest); }
+
+/* Grievance card */
+.griev-card {
+  border: 1px solid var(--cream-deep);
+  border-radius: 6px;
+  padding: 18px;
+  margin-bottom: 12px;
+}
+.clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--cream-warm);
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--forest-darkest);
+  font-weight: 600;
+}
+.clock.warn { background: var(--gold-pale); color: var(--warn); }
+.clock.danger { background: var(--danger-soft); color: var(--danger); }
+
+/* Notification */
+.notif {
+  background: #fff;
+  border: 1px solid var(--cream-deep);
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  gap: 18px;
+  align-items: flex-start;
+}
+.notif-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--info);
+  margin-top: 8px;
+}
+.notif-dot.danger { background: var(--danger); }
+.notif-dot.warn { background: var(--warn); }
+.notif-dot.ok { background: var(--ok); }
+.notif-title {
+  font-weight: 600;
+  color: var(--forest-darkest);
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+.notif-meta {
+  font-size: 11px;
+  color: var(--ink-faint);
+  margin-bottom: 6px;
+}
+.notif-body {
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+/* Confidentiality overlay box */
+.conf-box {
+  background: linear-gradient(135deg, var(--forest-darkest) 0%, var(--forest-dark) 100%);
+  color: var(--cream);
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+.conf-eyebrow {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold-light);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.conf-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.conf-list {
+  font-size: 13px;
+  color: var(--cream-deep);
+  line-height: 1.75;
+  padding-left: 20px;
+}
+.conf-list li { margin-bottom: 4px; }
+.conf-list strong { color: var(--gold-light); }
+
+/* Footer */
+.app-footer {
+  background: var(--forest-darkest);
+  color: var(--cream-deep);
+  padding: 26px 44px;
+  font-size: 12px;
+  text-align: center;
+  border-top: 2px solid var(--gold);
+  line-height: 1.7;
+}
+.app-footer strong { color: var(--gold-light); }
+.app-footer .contact {
+  margin-top: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--gold-light);
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background: var(--forest-darkest);
+  color: var(--cream);
+  padding: 16px 22px;
+  border-radius: 6px;
+  border-left: 3px solid var(--gold);
+  font-size: 13px;
+  max-width: 380px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 200;
+}
+.toast.show { transform: translateY(0); opacity: 1; }
+
+.helper-text {
+  font-size: 12px;
+  color: var(--ink-faint);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.bipartite-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 18px 0;
+}
+
+@media (max-width: 900px) {
+  .app-body { grid-template-columns: 1fr; }
+  .sidebar { position: static; height: auto; }
+  .header-inner { grid-template-columns: 1fr; gap: 12px; }
+  .main { padding: 24px; }
+  .receipt-row { grid-template-columns: 1fr; }
+  .bipartite-grid { grid-template-columns: 1fr; }
+  .profile-grid { grid-template-columns: 1fr; }
+}
+
+.hindi { font-family: 'Noto Sans Devanagari', 'Inter', sans-serif; }
+.telugu { font-family: 'Noto Sans Telugu', 'Inter', sans-serif; }
+.tamil { font-family: 'Noto Sans Tamil', 'Inter', sans-serif; }
+</style>
+</head>
+<body>
+
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-mark">SK</div>
+      <div class="brand-text">
+        <div class="brand-name">SKVS Hospital, Tirupathi</div>
+        <div class="brand-sub">Patient Portal · Data Principal Self-Service</div>
+      </div>
+    </div>
+    <select class="lang-select" id="langSelect" onchange="setLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी (Hindi)</option>
+      <option value="te">తెలుగు (Telugu)</option>
+      <option value="ta">தமிழ் (Tamil)</option>
+    </select>
+    <div class="user-chip">
+      <div class="avatar">PS</div>
+      <div class="user-chip-label">
+        <div class="user-chip-name">Mrs Padmavathi Srinivasan</div>
+        <div class="user-chip-id">UHID: SKVS-2024-018542</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="app-body">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="main" id="main"></main>
+</div>
+
+<footer class="app-footer">
+  <div><strong>Demonstration Build</strong> · DPDP Act 2023 × DPDP Rules 2025 · Statutory anchors shown inline · Built by <strong>CA. S. Santhanakrishnan</strong> as part of the DPDP Implementation Practice · Not a live production system · No real personal data.</div>
+  <div class="contact">For more details reach out to mobile <strong>+91 99406 8
